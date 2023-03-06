@@ -1,0 +1,14 @@
+<h1>Data Binding</h1>
+
+<h2>1. String Interpolation</h2>
+<p>Name: {{ firstName }}</p>
+
+<h2>2. Property Binding</h2>
+<img [src]="img" alt="fav" />
+
+<h2>3. Event Binding</h2>
+<input type="text" (input)="passvaluetocomponent($event)" />
+
+<h2>4. Two way data binding</h2>
+<input type="text" [(ngModel)]="defaultValue" />
+<p>Default Value = {{ defaultValue }}</p>

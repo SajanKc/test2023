@@ -1,0 +1,8 @@
+<h1>I'm Parent Component</h1>
+<!-- <app-children [sometext]="textvalue" ></app-children> -->
+<app-children
+  [sometext]="textvalue"
+  (othertext)="getText($event)"
+></app-children>
+<h4>From child: {{ fromChild }}</h4>
+<p>Parent Total = {{ total }}</p>

@@ -1,0 +1,10 @@
+<p>I'm Children Component</p>
+<h3>Value: {{ sometext }}</h3>
+
+<p>Sending data back to parent from children</p>
+<input type="text" #inputOtherText />
+<button type="button" (click)="sendOtherText(inputOtherText.value)">
+  Send
+</button>
+
+<p>Child Total = {{ total }}</p>
